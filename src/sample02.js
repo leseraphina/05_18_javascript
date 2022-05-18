@@ -33,12 +33,22 @@ const it = [
 
 // for 3가지
 //  일반for
-let num  = it.length;
-console.log(num)
-for(let i = 0 ; i <= num-1 ; i++){
-  it[i].action();
-}
+
+// let num  = it.length;
+// console.log(num)
+// for(let i = 0 ; i <= num-1 ; i++){
+//   it[i].action();
+// }
+
 //  for in
 
-// for of
+for(let index in it){
+  it[index].action();
+}
 
+// for of
+for(let item of it){
+  item.action();
+}
+
+//  35 분에 시작
